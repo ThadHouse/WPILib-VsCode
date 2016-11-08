@@ -2,8 +2,8 @@
 {
   "editor.tabSize": 2,
   "editor.renderWhitespace": "all",
-  "C_Cpp.clang_format_formatOnSave" :true,
-  "editor.formatOnType":true,
-  "C_Cpp.clang_format_fallbackStyle":null,
+  "C_Cpp.clang_format_formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
   "files.eol": "\n"
 }

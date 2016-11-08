@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": ["/usr/arm-frc-linux-gnueabi/include/c++/4.9.3", "/usr/arm-frc-linux-gnueabi/usr/include"],
+            "browse" : {
+                "limitSymbolsToIncludedHeaders" : true,
+                "databaseFilename" : ""
+            }
+        },
+        {
+            "name": "Linux",
+            "includePath": ["/usr/arm-frc-linux-gnueabi/include/c++/4.9.3", "/usr/arm-frc-linux-gnueabi/usr/include"],
+            "browse" : {
+                "limitSymbolsToIncludedHeaders" : true,
+                "databaseFilename" : ""
+            }
+        },
+        {
+            "name": "Win32",
+            "includePath": ["C:\\frc\\arm-frc-linux-gnueabi\\include\\c++\\4.9.3", "C:\\frc\\usr\\include"],
+            "browse" : {
+                "limitSymbolsToIncludedHeaders" : true,
+                "databaseFilename" : ""
+            }
+        }
+    ]
+}

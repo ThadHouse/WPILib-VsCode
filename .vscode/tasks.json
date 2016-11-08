@@ -1,0 +1,66 @@
+{
+    "version": "0.1.0",
+    "command": "gradlew",
+    "isShellCommand": true,
+    "showOutput": "always",
+    "args": [],
+    "suppressTaskName": true,
+    "tasks": [
+        {
+            "taskName": "build",
+            "isBuildCommand": true,
+            "args": ["build"],
+            "problemMatcher": [
+                {
+                    "owner": "cpp",
+                    "fileLocation": "absolute",
+                    "pattern": 
+                    {
+                        "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                        "file": 1,
+                        "line": 2,
+                        "column": 3,
+                        "severity": 4,
+                        "message": 5
+                    }
+                },
+                {
+                "owner": "java",
+                "fileLocation": "absolute",
+                "pattern": 
+                   {
+                        "regexp": "^(.+\\.java):(\\d+):(?:\\s+(error)):(?:\\s+(.*))$",
+                        "file": 1,
+                        "location": 2,
+                        "severity": 3,
+                        "message": 4
+                    }
+                },
+                {
+                "owner": "checkstyle",
+                "fileLocation": "absolute",
+                "pattern": 
+                   {
+                        "regexp": "^(.+(ERROR]))(.+\\.java):(\\d+):(\\d+):(?:\\s+(.*))$",
+                        "file": 3,
+                        "line": 4,
+                        "column": 5,
+                        "message": 6
+                    }
+                }
+            ]
+        },
+        {
+            "taskName": "publish",
+            "args": ["build", "publish"]
+        },
+		{
+            "taskName": "clean",
+            "args": ["clean"]
+        },
+		{
+            "taskName": "format",
+            "args": ["format"]
+        }
+    ]
+}

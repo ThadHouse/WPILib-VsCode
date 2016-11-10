@@ -9,13 +9,14 @@
         {
             "taskName": "build",
             "isBuildCommand": true,
-            "args": ["build"],
+            "args": [
+                "build"
+            ],
             "problemMatcher": [
                 {
                     "owner": "cpp",
                     "fileLocation": "absolute",
-                    "pattern": 
-                    {
+                    "pattern": {
                         "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
                         "file": 1,
                         "line": 2,
@@ -25,10 +26,9 @@
                     }
                 },
                 {
-                "owner": "java",
-                "fileLocation": "absolute",
-                "pattern": 
-                   {
+                    "owner": "java",
+                    "fileLocation": "absolute",
+                    "pattern": {
                         "regexp": "^(.+\\.java):(\\d+):(?:\\s+(error)):(?:\\s+(.*))$",
                         "file": 1,
                         "location": 2,
@@ -37,30 +37,36 @@
                     }
                 },
                 {
-                "owner": "checkstyle",
-                "fileLocation": "absolute",
-                "pattern": 
-                   {
-                        "regexp": "^(.+(ERROR]))(.+\\.java):(\\d+):(\\d+):(?:\\s+(.*))$",
-                        "file": 3,
-                        "line": 4,
-                        "column": 5,
-                        "message": 6
+                    "owner": "checkstyle",
+                    "fileLocation": "absolute",
+                    "pattern": {
+                        "regexp": "^.+ERROR]\\s(.+\\.java):(\\d+):(\\d+):(?:\\s+(.*))$",
+                        "file": 1,
+                        "line": 2,
+                        "column": 3,
+                        "message": 4
                     }
                 }
             ]
         },
         {
             "taskName": "publish",
-            "args": ["build", "publish"]
+            "args": [
+                "build",
+                "publish"
+            ]
         },
-		{
+        {
             "taskName": "clean",
-            "args": ["clean"]
+            "args": [
+                "clean"
+            ]
         },
-		{
+        {
             "taskName": "format",
-            "args": ["format"]
+            "args": [
+                "format"
+            ]
         }
     ]
 }
